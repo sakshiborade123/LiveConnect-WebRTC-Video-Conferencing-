@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Clone - WebRTC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meeting Room </h1>
+    
+    <div id="video-container">
+        <video id="localVideo" autoplay playsinline muted></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div class="controls">
+        <button id="startCall">Start Call</button>
+        <button id="muteAudio">Mute Audio</button>
+        <button id="stopVideo">Stop Video</button>
+        <button id="shareScreen">Share Screen</button>
+    </div>
+
+    <div id="chat-container">
+        <h3>Chat</h3>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendMessage">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
